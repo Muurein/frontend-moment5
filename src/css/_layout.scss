@@ -107,9 +107,10 @@ header {
 .menu-list.active {
     right: 0;
 }
-    
 
-/* MAIN CONTENT */
+
+
+/* MAIN */
 main {
     max-width: 500px;
     margin-top: 2em;
@@ -121,6 +122,18 @@ h1 {
     line-height: 1em;
 }
 
+/* buttons to pages relating to other parts of the course */
+.more-content-button, .to-animations {
+    @include button(base.$color-secondary-darker);
+    width: 8em;
+    margin-top: 2em;
+}
+
+.more-content-button:hover {
+    background-color: base.$link-secondary-hover;
+}
+
+/* main content */
 .is-reading {
     width: 17em;
     margin: auto auto;
@@ -190,11 +203,6 @@ aside p {
 
 
 /* ANIMERING */
-.to-animations {
-    @include button(base.$color-secondary-darker);
-    width: 8em;
-}
-
 .to-animations:hover {
     background-color: base.$link-secondary-hover;
     animation: to-animations 1s linear infinite;
@@ -340,6 +348,11 @@ footer p {
         margin-top: 1em;
     }
 
+    .container {
+        display: flex;
+    }
+    
+
     .is-reading {
         width: 25em;
         margin-left: auto;
@@ -391,6 +404,10 @@ footer p {
 
     h2 {
         margin-bottom: 1.1em;
+    }
+
+    .container {
+        margin-top: 1.5em;
     }
     
     .is-reading {
