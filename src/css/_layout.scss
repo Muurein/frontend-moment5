@@ -1,0 +1,429 @@
+/* man måste inkludera vilken fil variabeln ska tas ifrån, annas kommer det bli undefined */
+@use "base";
+@use "components";
+@use "animations";
+@import "components"; /* funkade inte utan @import */
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: base.$font-family;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+a {
+    color: base.$text-menu;
+    text-decoration: none;
+}
+
+/* navigation */
+/* based on code from Web Dev Tutorials on YouTube https://www.youtube.com/watch?v=flItyHiDm7E */
+header {
+
+    /* nav */
+    .dropdown-menu {
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        z-index: 2;
+
+        .logo {
+            font-size: 1.1em;
+            font-weight: 600;
+            z-index: 2;
+        }
+    }
+}
+
+.menu-link:hover {
+    background-color: base.$link-secondary-hover; 
+    padding: 0.2em;
+    border-radius: 30px;
+}
+
+/* li */
+.menu-item {
+    list-style-type: none;
+    margin: 1.2em 0;
+}
+
+/* creates the hamburger-menu */
+.menu-hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: left 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: base.$text-menu;
+}
+    
+.menu-hamburger.active .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg)
+}
+    
+.menu-hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+    
+.menu-hamburger.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(135deg);
+}
+       
+
+/* styles menu content and puts away the menu */
+.menu-list {
+    position: fixed;
+    right: -120%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/*menu-item*/
+.menu-item {
+    margin: 16px 0;
+}
+
+/*makes the hamburger appear*/
+.menu-list.active {
+    right: 0;
+}
+    
+
+/* MAIN CONTENT */
+main {
+    max-width: 500px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1 {
+    padding: 0.5em; 
+    line-height: 1em;
+}
+
+.is-reading {
+    width: 17em;
+    margin: auto auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+    box-shadow: 1px 3px 10px rgb(124, 112, 98);
+}
+
+.is-reading article {
+    padding: 1em;
+}
+
+.is-reading img {
+    width: 200px;
+    height: 320px;
+}
+
+.read-more {
+    @include button(base.$color-secondary-darker);
+    border-radius: 0;
+}
+
+.to-goodreads {
+    @include button(base.$color-secondary-darker);
+    width: 7em;
+    margin-top: 1em;
+}
+
+.read-more:hover, .to-goodreads:hover{
+    background-color: base.$link-secondary-hover;
+}
+
+aside {
+    @extend .is-reading;
+    margin-bottom: 3em;
+}
+
+aside p {
+    margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/* SASS-PAGE */
+.sass-h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.sass-page {
+    @extend .is-reading;
+    padding: 1.5em;
+    text-align: left;
+    width: 60vw;
+    margin-bottom: 6.1em;
+}
+
+.sass-page h2 {
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+}
+.sass-page p {
+    margin: 1em;
+}
+
+
+/* ANIMERING */
+.to-animations {
+    @include button(base.$color-secondary-darker);
+    width: 8em;
+}
+
+.to-animations:hover {
+    background-color: base.$link-secondary-hover;
+    animation: to-animations 1s linear infinite;
+}
+
+.animations {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11em;
+}
+
+.animations p {
+    @include button(base.$color-secondary-darker);
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rainbow {
+    margin-top: 4em;
+}
+
+#rainbow:hover {
+    animation-name: rainbow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.shrink {
+    transition-property: width, height;
+    transition-duration: 1.5s;
+}
+
+.shrink:hover {
+    width: 1em;
+}
+
+.windmill:hover {
+    animation: windmill 1s linear infinite;
+}
+
+.goodbye:hover {
+    animation: goodbye 3s linear;
+}
+
+.grow:hover {
+    animation: grow 3s linear;
+}
+
+.helicopter:hover {
+    animation: helicopter 4s;
+}
+
+/* footer */
+footer { 
+    color: base.$text-menu;
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+    text-align: center;
+}
+
+footer p {
+    padding: 1.3em;
+}
+
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: base.$color-primary;
+    }
+
+    header, footer, .menu-list {
+        background-color: base.$color-secondary-darker;
+        color: base.$text-menu;
+    } 
+
+    main h1, .sass-h1 {
+        color: base.$color-primary-darker;
+    }
+
+    .is-reading {
+        background-color: base.$color-primary-lighter;
+        color: base.$color-primary-darker;
+    }
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: base.$darkmode-color-primary;
+    }
+
+    header, footer, .menu-list {
+        background-color: base.$darkmode-color-secondary;
+        color: base.$darkmode-text;
+    }
+
+    main h1, .sass-h1 {
+        color: base.$darkmode-text;
+    }
+
+    .is-reading {
+        background-color: base.$darkmode-color-tetiary;
+        color: base.$darkmode-text;
+        box-shadow: 1px 3px 10px rgb(92, 92, 92);
+    }
+
+    .menu-link:hover {
+        background-color: black; 
+    }
+
+    .read-more {
+        @include button(base.$darkmode-color-secondary);
+    }
+
+    .to-goodreads{
+        @include button(base.$darkmode-color-secondary);
+        width: 7em;
+    }
+
+    .read-more:hover {
+        background-color: black;
+    }
+
+    .to-goodreads:hover {
+        background-color: black;
+    }
+}
+
+
+
+/* tablet */
+@media (min-width: base.$screen-medium) {
+
+    main {
+        max-width: 900px;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+
+    .is-reading {
+        width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* desktop */
+@media (min-width: base.$screen-large) {
+
+    /* MENU */
+    /* displays the menu without a hambruger-menu */
+    .menu-hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        width: 75vw;
+        right: 2vw;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        margin-top: 5px;
+        font-size: 1.2em;
+        font-weight: 100;
+        border-radius: 25px;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        position: static;
+}
+
+    .menu-item {
+        width: 6em;
+        margin-right: 3em;
+    }
+
+    .menu-item:hover {
+        border-radius: 15px;
+    }
+
+
+    /*MAIN CONTENT */
+    main {
+        max-width: 1400px;
+        margin: auto auto;
+    }
+
+    h2 {
+        margin-bottom: 1.1em;
+    }
+    
+    .is-reading {
+        width: 40em;
+
+        .display {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .read-more {
+            margin-top: 1.5em;
+        }
+
+        .to-goodreads {
+            margin-left: -4em;
+            margin-top: 1.4em;
+        }
+    }
+
+    
+    .flex-buttons {
+        display: flex;
+        margin-right: 1em;
+        justify-content: space-evenly;
+    }
+
+
+    /* SASS-page */
+    .sass-page {
+        max-width: 1400px;
+        width: 35em;
+    }
+
+    
+}

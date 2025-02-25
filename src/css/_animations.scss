@@ -1,0 +1,127 @@
+@keyframes to-animations {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    18% {
+        background-color: orange;
+    }
+    32% {
+        background-color: yellow;
+    }
+    46% {
+        background-color: green;
+    }
+    60% {
+        background-color: blue;
+    }
+    74% {
+        background-color: purple;
+    }
+    90% {
+        background-color: pink;
+    }
+}
+
+@keyframes windmill {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+@keyframes goodbye {
+    from {
+        transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+
+    }
+    to {
+        transform: matrix(0.586,0.8,-0.8,0.586,0,0.5);
+        opacity: 0.5;
+    }
+    to {
+        transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        opacity: 0;
+    }
+}
+
+
+@keyframes grow {
+    10% {
+        width: 6em;
+        height: 3em;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.9) ;
+    }
+    20% {
+        width: 9em;
+        height: 6em;
+    }
+    30% {
+        width: 12em;
+        height: 9em;
+    }
+    40% {
+        width: 15em;
+        height: 12em;
+        background-color: lightgray;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    50% {
+        width: 18em;
+        height: 15em;
+    }
+    60% {
+        width: 21em;
+        height: 18em;
+    }
+    70% {
+        width: 24em;
+        height: 21em;
+        background-color: grey;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    80% {
+        width: 27em;
+        height: 24em;
+    }
+    90% {
+        width: 30em;
+        height: 27em;
+    }
+    100% {
+        width: 33em;
+        height: 30em;
+        background-color: black;
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes helicopter {
+    from {
+        transform: translate(0,0)
+    }
+    25% {
+        transform: translate(-200px, -200px);
+    }
+    75% {
+        transform: translate(200px, -200px);
+    }
+    to {
+        transform: translate(200px, 200px);
+    }
+    to {
+        transform: translate(0,0);
+    }
+}

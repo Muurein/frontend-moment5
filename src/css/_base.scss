@@ -1,0 +1,30 @@
+/* lightmode colors */
+$color-primary: rgb(252, 244, 203);
+$color-primary-darker: darken($color-primary, 73%);
+$color-primary-lighter: lighten($color-primary, 40%);
+$color-primary-darkmode-main: darken($color-primary, 50%);
+$color-secondary: complement($color-primary);
+$color-secondary-darker: darken($color-secondary, 12%);
+$color-tetiary: white;
+
+/* darkmode */
+$darkmode-color-primary: rgb(56, 56, 56);
+$darkmode-color-secondary: rgb(15, 15, 15);
+$darkmode-color-tetiary: rgb(32, 32, 30);;
+$darkmode-text: white;
+
+/* fonts and texts */
+$font-family: Helvetica, Arial, sans-serif;
+$text-menu: white;
+
+/* links */
+$link-secondary: white;
+$link-secondary-hover: rgb(72, 73, 128);
+
+/* screen sizes */
+$screen-medium: 600px;
+$screen-large: 1024px;
+
+/* dark mode */
+
+

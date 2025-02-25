@@ -1,0 +1,12 @@
+/* Malin brukar börja med att skapa sandra scss-filer för variabler, en som sköter layouten (hur header, huvudninnehåll och
+footer ska se ut */
+
+/* main sköter mer eller mindre bara importen */
+
+
+@use "base";
+@use "components";
+@use "animations";
+@use "layout";
+
+
