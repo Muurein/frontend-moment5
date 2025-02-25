@@ -123,6 +123,10 @@ h1 {
 }
 
 /* buttons to pages relating to other parts of the course */
+.container {
+    text-align: center;
+}
+
 .more-content-button, .to-animations {
     @include button(base.$color-secondary-darker);
     width: 8em;
