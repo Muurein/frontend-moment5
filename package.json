@@ -16,6 +16,6 @@
     "parcel": "^2.13.3"
   },
   "dependencies": {
-    "chart.js": "^4.4.8"
+    "chart.js": "^4.4.9"
   }
 }
