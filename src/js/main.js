@@ -142,10 +142,10 @@ function writeOutCourses() {
     new Chart(stapelEl, { //varför står det "1399, null" i resultaten när man hovrar på staplarna????
         type: "bar",
         data: {
-            labels: [courseName3, courseName5, courseName1, courseName2, courseName6, courseName4],
+            labels: [courseName2, courseName3, courseName1, courseName1, courseName6, courseName4],
             datasets: [{
                 label: "antal sökande till kurser",
-                data: [courseApplicants3, courseApplicants5, courseApplicants1, courseApplicants2, courseApplicants6, courseApplicants4],
+                data: [courseApplicants2, courseApplicants3, courseApplicants1, courseApplicants1, courseApplicants6, courseApplicants4],
                 borderWidth: 1
             }]
         },
@@ -176,7 +176,7 @@ function writeOutPrograms() {
         programsMostApplicants.push(sortedPrograms[i]);
     }
 
-    console.table(programsMostApplicants); //lägg in varje värde i egen array?
+
 
     //lägg in varje programs namn i varsina arrayer för att kunna lägga in arrayerna som "titel-värden" i cirkeldiagrammet
     let programName1 = [];
@@ -220,7 +220,7 @@ function writeOutPrograms() {
             }]
         },
         options: {
-            backgroundColor: ["Red", "Yellow", "Green", "Pink", "Blue", "Purple"]
+            backgroundColor: ["Red", "Yellow", "Pink", "Green", "Blue", "Purple"]
         }
     });
 }

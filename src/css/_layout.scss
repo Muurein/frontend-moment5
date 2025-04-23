@@ -261,7 +261,43 @@ aside p {
     animation: helicopter 4s;
 }
 
-/* footer */
+
+
+
+/* DIAGRAM */
+.bar-chart {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    padding: 4%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 3px 10px rgb(124, 112, 98);
+}
+
+.circle-chart {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    padding: 4%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 3px 10px rgb(124, 112, 98);
+}
+
+
+
+/* KARTA */
+#map {
+    width: 500px;
+    height: 500px;
+  }
+
+
+
+/* FOOTER */
 footer { 
     color: base.$text-menu;
     width: 100%;
@@ -273,6 +309,9 @@ footer {
 footer p {
     padding: 1.3em;
 }
+
+
+
 
 
 /* light mode */
