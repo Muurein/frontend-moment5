@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: main2.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: main2.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @description Denna modul hanterar Google Maps API:t och allt som har att göra med kartan, markören och sökfunktionen.
+ */
+
+"use strict"
+
+/**
+ * importerar Nominatim API:t från nominatimAPI.js-filen.
+ */
+import NominatimAPI from "./nominatimAPI";
+const nominatim  = new NominatimAPI();
+
+/**
+ * importerar Google Maps JavaScript API.
+ */
+(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&amp;&amp;u().then(()=>d[l](f,...n))})({
+    key: "AIzaSyDHL3cUaEZ6-TsKbQ7jEoUPdf5af4uzN2M",
+    v: "weekly",
+});
+  
+
+/**
+ * När sidan laddar in frågar den användaren om den får läsa in användarens position.
+ * Informationen är dock inte kopplad till kartan.
+ * Kartan hämtas.
+ */
+window.onload = () => {
+
+    // //kollar om man kan läsa in användarens position
+    // if ("geolocation" in navigator) {
+
+    //     navigator.geolocation.getCurrentPosition(function (position) {
+    //         let latitude = position.coords.latitude;
+    //         let longitude = position.coords.longitude;
+
+    //         console.log(`Latitude: ${latitude}`);
+    //         console.log(`Longitude: ${longitude}`);
+    //     }, function (error) {
+    //         console.error("Fel vid hämtning av position:", error.message);
+    //     });
+    // } else {
+    //     //Till utvecklare
+    //     console.error("Din webbläsare stödjer inte geolokalisering");
+
+    //     //till användare
+    //     document.getElementById("error").innerHTML = "&lt;p>Din webbläsare stödjer inte geolokalisering&lt;/p>";
+    // }
+
+    //initierar kartan
+    initMap();
+}
+
+
+//skapar kartan och markören
+let map;
+let marker;
+
+/**
+ * Definierar startpositionen, i det här fallet är den satt till Mittuniversitets Campusbibliotek.
+ * Importerar kartan från API:t och kopplar den valda startpositionen till kartan.
+ * Kallar på initSearch-funktionen.
+ */
+async function initMap() {
+    // Mittuniversitet Campusbilbiotek - varför visar kartan automatiskt Istanbul??????
+    const position = { lat: 62.39470, lng: 17.28491};
+   
+    //importerar kartan
+    const { Map } = await google.maps.importLibrary("maps");
+
+    //kopplar till HTML-element, väljer inzoomning och position
+    map = new Map(document.getElementById("map"), {
+        zoom: 4,
+        center: position,
+        mapId: "DEMO_MAP_ID",
+    });
+    
+    //hämtar användaren sökning
+    initSearch();
+}
+
+
+//sök-knapp
+document.getElementById("searchButton").addEventListener("click", (e) => {
+    e.preventDefault();
+    initSearch();
+});
+
+/**
+ * Kopplar sökning och plats till Nominatims API.
+ * @returns null om variabel place inte har något värde.
+ */
+//Sökfält
+async function initSearch() {
+    const formValue = document.getElementById("search").value;
+
+    //kopplar på Nominatim
+    let place = await nominatim.search(formValue);
+
+    if (place == false) {
+        //till utvecklare
+        console.error(error);
+
+        //till användare
+        document.getElementById("error").innerHTML = "&lt;p>Något blev fel med anslutningen. Försök igen senare!&lt;/p>"
+        return;
+    }
+
+    newMarker(place);
+
+}
+
+/**
+ * Sätter ut en ny markör, tar bort den gamla samt centrerar kartan.
+ * @param {number} place - latitude och longitud för den sökta platsen.
+ */
+async function newMarker(place) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const position = {lat: Number(place.lat), lng: Number(place.lon)};
+
+    if (marker != undefined) {
+        marker.setMap(null);
+    }
+
+    marker = new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: place.name,
+    });
+
+    map.setCenter(position);
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="NominatimAPI.html">NominatimAPI</a></li></ul><h3>Global</h3><ul><li><a href="global.html#initMap">initMap</a></li><li><a href="global.html#initSearch">initSearch</a></li><li><a href="global.html#loadCourses">loadCourses</a></li><li><a href="global.html#newMarker">newMarker</a></li><li><a href="global.html#writeOutCourses">writeOutCourses</a></li><li><a href="global.html#writeOutPrograms">writeOutPrograms</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Jun 08 2025 23:28:31 GMT+0200 (centraleuropeisk sommartid)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
