@@ -2,22 +2,13 @@
 
 ## Dynamiska webbplatser
 
-### Del 1 - diagram:
-1. skapa ett stapeldiagram och ett cirkeldiagram.
-2. Använd ett JavaScript bibliotek (kommer använda Chart.js).
-3. Hämta data till diagrammen från en extern källa med hjälp av FetchHAPI-anrop tillsammans med async/wait
+### Stapeldiagram
+Visar de sex kurserna hos Mittuniversitetet som har flest totala sökande (med hjälp av chart.js).
 
-#### Krav:
-1. Ska visa statisitk över de 6 mest sökta *kurserna*. Namn på kurs och totalt antal sökande ska synas i diagrammet.
-2. Ska visa statistik över de 5 mest sökta *programmen*. Namn på program och totalt antal sökande ska synas i diagrammet.
-3. JavaScripten-koden ska vbara dokumenterat med JSDoc och dokumentation ska genereras utifrån det.
+#### Cirkeldiagram
+Visar de fem program hos Mittuniversitetet som har flest totala sökande (med hjälp av chart.js). Kul att webbbutvecklingsprogrammet är med!
 
-#### Del 2 - karta:
-1. använd ett extern API (kommer använda Googple Maps API) för att bifoga en karta på webbplatsen. 
-2. användare ska kunna söka på en plats genom att fylla i ett textfält och sen se den platsen på kartan
+#### Karta
+Användaren kan i ett sökfält söka efter en plats på en karta, varefter en markör syns på den sökta platsen.
 
-#### Krav:
-1. Det ska finnas ett textvält (formulär) på sidan där användaren kan skriva in en plats. *Sökningen ska vara en fristående del av webbplatse och inte en inbyggd sökfunktion i karttjänsten.*
-2. När man valjet plats ska AJAX-anrop (Fetch, Import eller motsvarande till extern källa) göras till karttjänsten.
-3. Den valda platsen ska visas med markör på vald plats.
-4. JavaScripten-koden ska vbara dokumenterat med JSDoc och dokumentation ska genereras utifrån det.
+Kartan hämtas från Google Maps API och sökfältet kopplar till kartan med hjälp av Nominatim API.

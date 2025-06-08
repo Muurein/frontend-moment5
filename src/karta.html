@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 5</title>
 
+    <meta http-equiv="Access-Control-Allow-Origin" content="https://nominatim.openstreetmap.org/" />
      <!--<link rel="stylesheet" src="css/styles.css">-->
      <link rel="stylesheet" href="css/main.scss">
      <script src="js/main2.js" type="module" defer></script>
-     <scriptsrc="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&loading=async&libraries=maps&v=beta" defer></script>
 </head>
 <body>
     <header>
@@ -38,6 +38,11 @@
             <p class="more-content-button"><a href="karta.html">Till karta</a></p>
         </div>
 
+        <form>
+            <input id="search" name="search" type="text" value="Sök här">
+            <button id="searchButton" class="search-button">Sök stad</button>
+        </form>
+        <div id="error"></div>
         <div id="map"></div>
     </main>
     

@@ -1,58 +1,38 @@
 "use strict"
 
-/* get elements */
+//hämtar elementen
 const dropdownMenuEl = document.getElementById("hamburger");
 const menuListEl = document.getElementById("nav-ul");
 const stapelEl = document.getElementById("barChart");
 const circleEl = document.getElementById("circleChart");
 let coursesPrograms = [];
 
+/**
+ * Togglar menyn genom att lyssna efter när knappen trycks på.
+ */
 document.querySelectorAll(".menu-link").forEach(n => n.addEventListener("click", () => {
     dropdownMenuEl.classList.remove("active");
     menuListEl.classList.remove("active");
 }))
 
-/* toggles menu */
 dropdownMenuEl.addEventListener ("click", () => {
     dropdownMenuEl.classList.toggle("active");
     menuListEl.classList.toggle("active");
 })
 
 
-
+/**
+ * Laddar in diagrammet när sidan startar.
+ */
 window.onload = () => {
     loadCourses();
-
-    /*if ("geolocation" in navigator) {
-
-        navigator.geolocation.getCurrentPosition(function (position) {
-            let latitude = position.coords.latitude;
-            let longitude = position.coords.longitude;
-
-            console.log(`Latitude: ${latitude}`);
-            console.log(`Longitude: ${longitude}`);
-        }, function (error) {
-            console.error("Fel vid hämtning av position:", error.message);
-        });
-    } else {
-        console.error("Geolokalisering stöds inte av din webbläsare");
-    }*/
 }
 
 
-
-/* CHARTS */
-
-
-
 /**
- * ladda in diagrammet när sidan startar
- */
-
-
-/**
- * Hämtar datan med ett fetch-anrop
- * Kallar sen på funktionen som ska skriva ut diagrammet
+ * Hämtar datan med ett fetch-anrop.
+ * Kallar sen på funktionen som ska skriva ut diagrammet.
+ * Skickar ut ett felmeddelande i form av en sträng om något gick fel med anslutningen.
  */
 async function loadCourses() {
     try {
@@ -80,11 +60,10 @@ async function loadCourses() {
 }
 
 /**
- * 
- * Sorterar värden "Kurs" och "Program" från varandra och lägger "Kurs" i en egen array
- * Sorterar arrayen med kurser efter de värden som har flest applicantsTotal
- * Går igenom arrayen sex gånger för att hitta de sex kurser som flest har sökt till, lägger dem i en egen array
- * Lägger de sex kurserna i ett stapeldiagram
+ * Sorterar värden "Kurs" och "Program" från varandra och lägger "Kurs" i en egen array.
+ * Sorterar arrayen med kurser efter de värden som har flest applicantsTotal.
+ * Går igenom arrayen sex gånger för att hitta de sex kurser som flest har sökt till, lägger dem i en egen array.
+ * Lägger de sex kurserna i ett stapeldiagram.
  */
 function writeOutCourses() {
 
@@ -101,51 +80,27 @@ function writeOutCourses() {
         coursesMostApplicants.push(sortedCourses[i]);
     } 
 
-    //randomiserar de sorterade värdena så stapeldiagrammet blir roligare att titta på
-    //coursesMostApplicants.sort(() => Math.random() - 0.5);
-    //tog bort detta för det blev lite för roligt
+
+    let chartNormalizedNames = [];
+    let chartData = [];
+
+    //hämtar ut de 6 kurser med flest applicants och lägger in i en ny array ,formatterar namnen
+    for (let i = 0; i < 6; i++) {
+        const course = coursesMostApplicants[i];
+
+        chartNormalizedNames.push([course.name]);
+
+        chartData.push([course.applicantsTotal]);
+    }
 
 
-    //lägg in varje kursnamn i varsina arrayer för att kunna lägga in arrayerna som värden i x-axeln i stapeldiagrammet
-    let courseName1 = [];
-    let courseName2 = [];
-    let courseName3 = [];
-    let courseName4 = [];
-    let courseName5 = [];
-    let courseName6 = [];
-
-    courseName1.push(coursesMostApplicants[0].name);
-    courseName2.push(coursesMostApplicants[1].name);
-    courseName3.push(coursesMostApplicants[2].name);
-    courseName4.push(coursesMostApplicants[3].name);
-    courseName5.push(coursesMostApplicants[4].name);
-    courseName6.push(coursesMostApplicants[5].name);
-
-    
-    //lägg in varje applicantsTotal i varsina arrayer för att kunna lägga in arrayerna som värden i y-axeln i stapeldiagrammet
-    let courseApplicants1 = [];
-    let courseApplicants2 = [];
-    let courseApplicants3 = [];
-    let courseApplicants4 = [];
-    let courseApplicants5 = [];
-    let courseApplicants6 = [];
-
-    courseApplicants1.push(coursesMostApplicants[0].applicantsTotal);
-    courseApplicants2.push(coursesMostApplicants[1].applicantsTotal);
-    courseApplicants3.push(coursesMostApplicants[2].applicantsTotal);
-    courseApplicants4.push(coursesMostApplicants[3].applicantsTotal);
-    courseApplicants5.push(coursesMostApplicants[4].applicantsTotal);
-    courseApplicants6.push(coursesMostApplicants[5].applicantsTotal);
-
-    
-
-    new Chart(stapelEl, { //varför står det "1399, null" i resultaten när man hovrar på staplarna????
+    new Chart(stapelEl, { 
         type: "bar",
         data: {
-            labels: [courseName2, courseName3, courseName1, courseName1, courseName6, courseName4],
+            labels: chartNormalizedNames,
             datasets: [{
                 label: "antal sökande till kurser",
-                data: [courseApplicants2, courseApplicants3, courseApplicants1, courseApplicants1, courseApplicants6, courseApplicants4],
+                data: chartData,
                 borderWidth: 1
             }]
         },
@@ -153,6 +108,17 @@ function writeOutCourses() {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        callback: function(value, index, ticks) {
+                            let label = this.getLabelForValue(value);
+
+                            return (label.length > 20)?
+                                    label.substr(0, 20):
+                                    label;
+                        }
+                    }
                 }
             }
         }
@@ -161,6 +127,12 @@ function writeOutCourses() {
 
 }
 
+/**
+ * Sorterar värden "Kurs" och "Program" från varandra och lägger "Program" i en egen array.
+ * Sorterar arrayen med program efter de värden som har flest applicantsTotal.
+ * Går igenom arrayen fem gånger för att hitta de fem program som flest har sökt till, lägger dem i en egen array.
+ * Lägger de in den fem programen i ett cirkeldiagram.
+ */
 function writeOutPrograms() {
 
     //sortera fram vilka värden i coursesPrograms som har typen "programs", lägg dem i nya arrayen programs
@@ -169,10 +141,10 @@ function writeOutPrograms() {
     //sortera fram vilka program som har högst antal
     let sortedPrograms = programs.sort((programA, programB) => programB.applicantsTotal - programA.applicantsTotal);
 
-    //array för att lagra de 6 program som har flest sökande
+    //array för att lagra de 5 program som har flest sökande
     let programsMostApplicants = [];
 
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i < 5; i++) {
         programsMostApplicants.push(sortedPrograms[i]);
     }
 
@@ -184,14 +156,14 @@ function writeOutPrograms() {
     let programName3 = [];
     let programName4 = [];
     let programName5 = [];
-    let programName6 = [];
+ 
 
     programName1.push(programsMostApplicants[0].name);
     programName2.push(programsMostApplicants[1].name);
     programName3.push(programsMostApplicants[2].name);
     programName4.push(programsMostApplicants[3].name);
     programName5.push(programsMostApplicants[4].name);
-    programName6.push(programsMostApplicants[5].name); 
+   
 
     //lägg in varje applicantsTotal i varsina arrayer för att kunna lägga in arrayerna som värden "antal-värden" i cirkeldiagrammet
     let programApplicants1 = [];
@@ -199,23 +171,23 @@ function writeOutPrograms() {
     let programApplicants3 = [];
     let programApplicants4 = [];
     let programApplicants5 = [];
-    let programApplicants6 = [];
+ 
 
     programApplicants1.push(programsMostApplicants[0].applicantsTotal);
     programApplicants2.push(programsMostApplicants[1].applicantsTotal);
     programApplicants3.push(programsMostApplicants[2].applicantsTotal);
     programApplicants4.push(programsMostApplicants[3].applicantsTotal);
     programApplicants5.push(programsMostApplicants[4].applicantsTotal);
-    programApplicants6.push(programsMostApplicants[5].applicantsTotal);
+    
 
 
     new Chart(circleEl, {
         type: "pie",
         data: {
-            labels: [programName1, programName2, programName3, programName4, programName5, programName6],
+            labels: [programName1, programName2, programName3, programName4, programName5],
             datasets: [{
                 label: "antal sökande till program",
-                data: [programApplicants1, programApplicants2, programApplicants3, programApplicants4, programApplicants5, programApplicants6],
+                data: [programApplicants1, programApplicants2, programApplicants3, programApplicants4, programApplicants5],
                 borderWidth: 1
             }]
         },

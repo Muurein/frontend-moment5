@@ -1,17 +1,25 @@
-(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new 
-Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set
-    (k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>
-        h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):
-    d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+"use strict"
+
+/**
+ * importerar Nominatim API:t från nominatimAPI.js-filen.
+ */
+import NominatimAPI from "./nominatimAPI";
+const nominatim  = new NominatimAPI();
+
+/**
+ * importerar Google Maps JavaScript API.
+ */
+(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
     key: "AIzaSyDHL3cUaEZ6-TsKbQ7jEoUPdf5af4uzN2M",
     v: "weekly",
-    // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-    // Add other bootstrap parameters as needed, using camel case.
-  });
+});
+  
 
- //I KONSOLLEN STÅR DET ATT AWAIT BARA FÅR ANVÄNDAS I ASYNC FUNCTIONS, ASYNC GENERATORS OCH MODULES 
-
-//webbläsaren stödjer geolokalisering
+/**
+ * När sidan laddar in frågar den användaren om den får läsa in användarens position.
+ * Informationen är dock inte kopplad till kartan.
+ * Kartan hämtas.
+ */
 window.onload = () => {
 
     //kollar om man kan läsa in användarens position
@@ -27,46 +35,93 @@ window.onload = () => {
             console.error("Fel vid hämtning av position:", error.message);
         });
     } else {
+        //Till utvecklare
         console.error("Din webbläsare stödjer inte geolokalisering");
+
+        //till användare
+        document.getElementById("error").innerHTML = "<p>Din webbläsare stödjer inte geolokalisering</p>";
     }
+
+    //initierar kartan
+    initMap();
 }
 
-//MAP WITH MARKER
-// Initialize and add the map
+
+//skapar kartan och markören
 let map;
+let marker;
 
+/**
+ * Definierar startpositionen, i det här fallet är den satt till Mittuniversitets Campusbibliotek.
+ * Importerar kartan från API:t och kopplar den valda startpositionen till kartan.
+ * Kallar på initSearch-funktionen.
+ */
 async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    // Mittuniversitet Campusbilbiotek - varför visar kartan automatiskt Istanbul??????
+    const position = { lat: 62.39470, lng: 17.28491};
+   
+    //importerar kartan
+    const { Map } = await google.maps.importLibrary("maps");
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
-
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
+    //kopplar till HTML-element, väljer inzoomning och position
+    map = new Map(document.getElementById("map"), {
+        zoom: 4,
+        center: position,
+        mapId: "DEMO_MAP_ID",
+    });
+    
+    //hämtar användaren sökning
+    initSearch();
 }
 
-initMap();
 
+//sök-knapp
+document.getElementById("searchButton").addEventListener("click", (e) => {
+    e.preventDefault();
+    initSearch();
+});
 
+/**
+ * Kopplar sökning och plats till Nominatims API.
+ * @returns null om variabel place inte har något värde.
+ */
+//Sökfält
+async function initSearch() {
+    const formValue = document.getElementById("search").value;
 
-//google maps embed api
-//google maps javascript api - infoga karta med javascript
-//med en rad kod kan man göra en navigera hit-knap
-//ex-kod 50:16
-//för att få en sökfras att översättas till en position använder mattias nominatim API
-/*
-    ange fråpn vilken domänadress nyckeln ska nvändas från så den blir låst och inte kan användas någonannanstans ifrån, nyckeln behöver därför inte gömmas
-*/
+    //kopplar på Nominatim
+    let place = await nominatim.search(formValue);
+
+    if (place == false) {
+        //till utvecklare
+        console.error(error);
+
+        //till användare
+        document.getElementById("error").innerHTML = "<p>Något blev fel med anslutningen. Försök igen senare!</p>"
+        return;
+    }
+
+    newMarker(place);
+
+}
+
+/**
+ * Sätter ut en ny markör, tar bort den gamla samt centrerar kartan.
+ * @param {number} place - latitude och longitud för den sökta platsen.
+ */
+async function newMarker(place) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const position = {lat: Number(place.lat), lng: Number(place.lon)};
+
+    if (marker != undefined) {
+        marker.setMap(null);
+    }
+
+    marker = new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: place.name,
+    });
+
+    map.setCenter(position);
+}

@@ -1,4 +1,4 @@
-4476
+4477
 107C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@msgpackr-extract133892856134659150 1
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\_\_sliced_to_array133849618943183035 1
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies\v8\v8-fast-api-calls.h133849618940963271 0
@@ -20,7 +20,7 @@
 116C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\utility-types\package.json133849618935649672 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\FM.js133849618943555430 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\node-gyp-build-optional-packages\LICENSE133849618933495278 0
-81C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist133899151167889826 1
+81C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist133938538543326385 1
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\cosmiconfig\dist\ExplorerSync.d.ts.map133849618938209094 0
 118C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\electron-to-chromium\LICENSE133849618933521617 0
 115C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\utils\src\path.js133849618939664367 0
@@ -44,7 +44,7 @@
 126C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\domhandler\lib133849618936335674 1
 153C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\workers\test\integration\workerfarm\shared-reference.js133849618938764897 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\_\_ts_values\package.json133849618943404070 0
-91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\karta.html133899146276010146 0
+91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\karta.html133938528940153696 0
 145C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\chart.js\dist\plugins\plugin.filler\filler.segment.d.ts133892856134080969 0
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\hardwareconcurrency.js133849618944131578 0
 89C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules133892856134781757 1
@@ -54,7 +54,7 @@
 112C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\entities\lib\escape.js133849618937384077 0
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\css-read-only-write.js133849618942151136 0
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133849618940390030 0
-97C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\css\_layout.scss133899149230475028 0
+97C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\css\_layout.scss133938538542227488 0
 80C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src133849669511867133 1
 107C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies133849618940923715 1
 137C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\src\requests\BundleGraphRequest.js133849618939471994 0
@@ -77,7 +77,7 @@
 105C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\sass\types\util133849618940619424 1
 138C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\runtime-js\lib\helpers\node\js-loader.js133849618938428819 0
 84C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\css133849599612307255 1
-93C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\diagram.html133897396794942928 0
+93C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\diagram.html133909434305337347 0
 103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types133849618934513223 1
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\node-addon-api\package.json133849618937690031 0
 145C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\node_modules\node-addon-api\tools\eslint-format.js133849618937352023 0
@@ -95,7 +95,7 @@
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\domutils\lib\helpers.d.ts.map133849618936831223 0
 103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\parent-module133849618934463352 1
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\domutils\lib\stringify.d.ts133849618938199125 0
-83C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js133859393520504530 1
+83C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js133909438321713364 1
 118C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\color-convert\conversions.js133849618934322942 0
 90C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\SASS.html133849689158587411 0
 111C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\picomatch\lib\scan.js133849618935579847 0
@@ -105,7 +105,7 @@
 119C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\utility-types\dist\index.d.ts133849618937555310 0
 118C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml-parser\package.json133849618934656044 0
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\htmlnano\docs\versions.json133849618939471994 0
-91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main.js133897373048796173 0
+91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main.js133938533717278879 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\BJ.js133849618939927612 0
 107C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\commander\LICENSE133849618933526703 0
 134C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\utils\test\input\sourcemap\inline.js133849618939471994 0
@@ -121,7 +121,14 @@
 105C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\tslib\README.md133849618936171042 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def133849618940639042 0
 98C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml133849618935180539 1
-92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main2.js133899151166747369 0
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main2.js133938532284298523 0
+124C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\midi.js133849618945530681 0
+117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domutils\lib\stringify.d.ts133849618939790173 0
+119C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\json-parse-even-better-errors133849618934875867 1
+166C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps\xml.json133849618936591723 0
+130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\runtime-browser-hmr\package.json133849618936320623 0
+123C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\index.d.ts.map133849618936000311 0
+99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\nominatimAPI.js133938533681890715 0
 96C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\dotenv133849618936473761 1
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\RW.js133849618946656543 0
 99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\callsites133849618934895815 1
@@ -347,23 +354,20 @@
 99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\js-tokens133849618934865895 1
 143C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\transformer-postcss\lib\PostCSSTransformer.js133849618936230870 0
 97C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\js-yaml133849618938764897 1
-124C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\midi.js133849618945530681 0
-117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domutils\lib\stringify.d.ts133849618939790173 0
-119C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\json-parse-even-better-errors133849618934875867 1
-95C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\json5133849618937105575 1
-166C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133849618949531903 0
-112C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\picomatch\CHANGELOG.md133849618936413939 0
-113C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\index.d.ts133849618942270144 0
-128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\css-grid.js133849618941619666 0
-136C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\domutils\lib\legacy.d.ts133849618937907126 0
-122C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\update-browserslist-db\README.md133849618935639691 0
-124C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\runtime-service-worker\lib133849618933886998 1
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domutils\lib\esm\helpers.js133849618934957827 0
 112C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\type-fest\package.json133849618933812098 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\dist\wasm-bindings.js133849618937595196 0
 138C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\packager-wasm\src\wasm-sourcemap.js.flow133849618933985715 0
 109C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\readme.md133849618936300679 0
 110C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\packager-css133849618934830912 1
+95C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\json5133849618937105575 1
+166C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133849618949531903 0
+112C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\picomatch\CHANGELOG.md133849618936413939 0
+113C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\index.d.ts133849618942270144 0
+122C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\update-browserslist-db\README.md133849618935639691 0
+124C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\runtime-service-worker\lib133849618933886998 1
+128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\css-grid.js133849618941619666 0
+136C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\domutils\lib\legacy.d.ts133849618937907126 0
 102C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lightningcss133849618936911004 1
 133C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\css-image-set.js133849618941687291 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\PF.js133849618946200111 0
@@ -887,7 +891,7 @@
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest5.c133849618940145007 0
 107C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\license133849618934399435 0
 114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\semver\internal\debug.js133849618936611077 0
-99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js133899151167836265 0
+99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js133938533682118968 0
 116C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\vendor\.DS_Store133849618933616439 0
 108C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\msgpackr\README.md133849618939629386 0
 112C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\vendor\macos133849618934685930 1
@@ -1467,12 +1471,10 @@
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_check_private_redeclaration.cjs133849618937125524 0
 157C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps133849618936566605 1
 129C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\chart.js\dist\core\core.animations.d.ts133892856133810294 0
-103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js.map133899151167889826 0
+103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js.map133938533682148890 0
 169C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps\decode.json133849618935579847 0
 111C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\lib\index.js133849618934301855 0
 169C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps\legacy.json133849618936300679 0
-166C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps\xml.json133849618936591723 0
-130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\runtime-browser-hmr\package.json133849618936320623 0
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_possible_constructor_return.cjs133849618939927612 0
 138C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\main-mjs\package.json133849618942184423 0
 134C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\lib\esm133849618937215463 1
@@ -1894,8 +1896,8 @@
 111C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\ansi-styles\readme.md133849618934609768 0
 137C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies\lz4\lib\dll\example\README.md133849618941275579 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\FilePath.js133849618935465111 0
-129C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\classlist.js133849618940700679 0
 118C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\entities\lib\decode.d.ts.map133849618938689152 0
+129C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\classlist.js133849618940700679 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lmdb\dependencies\lmdb-data-v1\libraries133849618933616439 1
 133C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\workers\test\integration\workerfarm133849618938744300 1
 134C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\chart.js\dist\plugins\plugin.decimation.d.ts133892856134449539 0
@@ -2526,7 +2528,6 @@
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\package.json133849618935305311 0
 119C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\index.d.ts133849618936566605 0
 127C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\rellist.js133849618946536303 0
-123C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\index.d.ts.map133849618936000311 0
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\index.js133849618934609768 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\esm\index.js133849618934067371 0
 125C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\domelementtype\lib\esm\package.json133849618934969362 0
@@ -3326,7 +3327,7 @@
 143C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\stricttransportsecurity.js133849618947025013 0
 140C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\subresource-bundling.js133849618947034981 0
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\subresource-integrity.js133849618947044956 0
-114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\en-katts-resedagbok.eb8d05d7.jpg133899146110148005 0
+114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\en-katts-resedagbok.eb8d05d7.jpg133938528943681646 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\svg-html.js133849618947100984 0
 129C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\features\svg-html5.js133849618947110953 0
 142C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\_\_iterable_to_array_limit\package.json133849618942909279 0
@@ -3733,7 +3734,7 @@
 138C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_class_apply_descriptor_get.cjs133849618937317045 0
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_class_apply_descriptor_update.cjs133849618937515412 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_class_call_check.cjs133849618937605170 0
-109C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\wind-and-truth.03a9e9a3.jpg133899146109831619 0
+109C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\wind-and-truth.03a9e9a3.jpg133938528943346216 0
 145C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\cjs\_class_check_private_static_access.cjs133849618937670465 0
 126C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\workers\lib\web\WebWorker.js133849618939161122 0
 115C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\feature-flags\lib133849618936135405 1
@@ -3937,7 +3938,6 @@
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\DependencySpecifier.js133849618934820938 0
 142C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\FileCreateInvalidation.js133849618935148819 0
 125C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\index.js133849618936443838 0
-137C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\config-node-pipeline133849618935325256 1
 131C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\PackageName.js133849618936831223 0
 131C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\src\SemverRange.js133849618936960867 0
 132C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\types-internal\scripts\build-ts.js133849618933985715 0
@@ -4010,7 +4010,7 @@
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\transformer-babel\lib\utils.js133849618937670465 0
 120C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\src\loadDotEnv.js133849618940481886 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\package.json133849618937755150 0
-100C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.8c1c22dc.css133899149238051515 0
+100C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.8c1c22dc.css133938538543296150 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\parcel_sourcemap_wasm133849618936954553 1
 139C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\parcel_sourcemap_node\build.js133849618936190972 0
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\source-map\parcel_sourcemap_node\Cargo.toml133849618940435006 0
@@ -4221,6 +4221,7 @@
 126C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\serializer.test.js133849618941304700 0
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\config-extends-not-found133849618937384077 1
 133C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\config-malformed133849618934539085 1
+137C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\config-node-pipeline133849618935325256 1
 140C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\config-plugin-not-found133849618936075167 1
 124C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\context133849618941907146 1
 140C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\custom-format-infer-ext133849618941917120 1
@@ -4259,7 +4260,7 @@
 141C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\main-global\package.json133849618942161113 0
 150C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\main-format-mismatch\package.json133849618942161113 0
 173C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local133849618942141484 1
-96C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\animering.html133899146109791729 0
+96C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\animering.html133938528943791339 0
 189C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local\local-plugin.js133849618940545089 0
 186C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local\package.json133849618942141484 0
 155C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\core\test\fixtures\library-custom-scopehoist\package.json133849618942122340 0
@@ -4468,10 +4469,10 @@
 101C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\.bin\semver133849618949520881 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\.bin\update-browserslist-db.cmd133849618949520881 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\.bin\update-browserslist-db.ps1133849618949520881 0
-94C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\diagram.html133899146110148005 0
-99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.18dbc454.js133899146109821649 0
-103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.18dbc454.js.map133899146110081529 0
-104C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.8c1c22dc.css.map133899149238071221 0
-92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.html133897167743244172 0
-92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\karta.html133899146276263679 0
-91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\SASS.html133899146110148005 0
+94C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\diagram.html133938528944025814 0
+99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.18dbc454.js133938529205335058 0
+103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.18dbc454.js.map133938529205404871 0
+104C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.8c1c22dc.css.map133938538543316105 0
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.html133937754046601864 0
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\karta.html133938528943791339 0
+91C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\SASS.html133938528944035788 0
