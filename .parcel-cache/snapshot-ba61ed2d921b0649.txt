@@ -25,7 +25,7 @@
 116C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\utility-types\package.json133849618935649672 0
 130C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\node-gyp-build-optional-packages\LICENSE133849618933495278 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\cosmiconfig\dist\ExplorerSync.d.ts.map133849618938209094 0
-81C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist133938693524805367 1
+81C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist133938803959214232 1
 96C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\base-x133849618934609768 1
 105C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml-render133849618935017593 1
 102C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\htmlnano\lib133849618940199941 1
@@ -134,7 +134,7 @@
 117C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\watcher\src\Glob.cc133849618936631030 0
 125C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\alt-oc.js133849618937907126 0
 98C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml133849618935180539 1
-92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main2.js133938794188926245 0
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\src\js\main2.js133938803682415492 0
 121C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\caniuse-lite\data\regions\KP.js133849618945062156 0
 113C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\fs\lib\index.js133849618935571107 0
 128C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@parcel\transformer-babel\lib\types.js133849618937495465 0
@@ -978,7 +978,7 @@
 122C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\@swc\helpers\src\_instanceof.mjs133849618944203792 0
 143C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\posthtml-parser\dist\index.d.ts133849618935769883 0
 107C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\license133849618934399435 0
-99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js133938568636874408 0
+99C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js133938803959179583 0
 114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lodash\_createToPairs.js133938564374492554 0
 116C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\term-size\vendor\.DS_Store133849618933616439 0
 109C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lodash\dropRight.js133938564377723844 0
@@ -1576,7 +1576,7 @@
 118C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\htmlparser2\lib\esm\index.js133849618934060491 0
 132C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\chart.js\dist\core\core.typedRegistry.d.ts133892856133999471 0
 157C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps133849618936566605 1
-103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js.map133938568637124181 0
+103C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\dist\index.4d158c38.js.map133938803959199521 0
 106C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\lodash\fp\seq.js133938564381713737 0
 169C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib\maps\decode.json133849618935579847 0
 111C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Frontend\frontend-moment5\node_modules\posthtml\lib\index.js133849618934301855 0
