@@ -1,3 +1,7 @@
+/**
+ * @description Denna modul hanterar Google Maps API:t och allt som har att göra med kartan, markören och sökfunktionen.
+ */
+
 "use strict"
 
 /**
@@ -22,25 +26,25 @@ const nominatim  = new NominatimAPI();
  */
 window.onload = () => {
 
-    //kollar om man kan läsa in användarens position
-    if ("geolocation" in navigator) {
+    // //kollar om man kan läsa in användarens position
+    // if ("geolocation" in navigator) {
 
-        navigator.geolocation.getCurrentPosition(function (position) {
-            let latitude = position.coords.latitude;
-            let longitude = position.coords.longitude;
+    //     navigator.geolocation.getCurrentPosition(function (position) {
+    //         let latitude = position.coords.latitude;
+    //         let longitude = position.coords.longitude;
 
-            console.log(`Latitude: ${latitude}`);
-            console.log(`Longitude: ${longitude}`);
-        }, function (error) {
-            console.error("Fel vid hämtning av position:", error.message);
-        });
-    } else {
-        //Till utvecklare
-        console.error("Din webbläsare stödjer inte geolokalisering");
+    //         console.log(`Latitude: ${latitude}`);
+    //         console.log(`Longitude: ${longitude}`);
+    //     }, function (error) {
+    //         console.error("Fel vid hämtning av position:", error.message);
+    //     });
+    // } else {
+    //     //Till utvecklare
+    //     console.error("Din webbläsare stödjer inte geolokalisering");
 
-        //till användare
-        document.getElementById("error").innerHTML = "<p>Din webbläsare stödjer inte geolokalisering</p>";
-    }
+    //     //till användare
+    //     document.getElementById("error").innerHTML = "<p>Din webbläsare stödjer inte geolokalisering</p>";
+    // }
 
     //initierar kartan
     initMap();

@@ -1,3 +1,7 @@
+/**
+ * @description Här hanteras Nominatim API:t.
+ */
+
 "use strict"
 
 /**

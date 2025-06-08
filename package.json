@@ -5,7 +5,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "docs": "jsdoc -d docs --configure jsdocConf.json"
   },
   "keywords": [],
   "author": "Amanda Thim",
@@ -16,6 +17,7 @@
     "parcel": "^2.13.3"
   },
   "dependencies": {
-    "chart.js": "^4.4.9"
+    "chart.js": "^4.4.9",
+    "docdash": "^2.0.2"
   }
 }

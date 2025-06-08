@@ -1,3 +1,7 @@
+/**
+ * @description Denna modul hanterar dropdown-menyn och detvå olika diagrammen.
+ */
+
 "use strict"
 
 //hämtar elementen
